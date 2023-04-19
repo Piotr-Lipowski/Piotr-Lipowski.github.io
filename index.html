@@ -9,7 +9,17 @@
 <body class="main">
 <div class="game-wrapper">
     <div id="squla-game-container"></div>
-    <script src='https://leukleren.squla.nl/v1/embed-game/quiz-test-newqt-junior/BuePrF0h/on-id/squla-game-container/925x632/game.js?platform=web&prototype=true'></script>
+    <script src='https://leukleren.squla.nl/v1/embed-game/quiz-test-newqt-medior/aoD3qUwN/on-id/squla-game-container/925x632/game.js?platform=web&prototype=true'></script>
+    <script>
+        window.onload = () => {
+            if (window.innerWidth < 1100) {
+                setTimeout(() => {
+                    document.getElementById("squla-game-container").style.height = "100%";
+                    document.getElementById("squla-game-container-iframe").style.height = "100%";
+                }, 100)
+            }
+        }
+    </script>
 </div>
 </body>
 </html>
